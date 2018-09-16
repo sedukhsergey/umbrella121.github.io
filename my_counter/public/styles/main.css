@@ -1,0 +1,430 @@
+
+
+
+body {
+	background: #5C6C8D;
+	color: white;
+	font-family: 'RobotoRegular', Arial, sans-serif;
+	min-width: 680px;
+	font-size: 16px;
+}
+
+
+
+* input {
+	color: #888;
+	padding: 3px;
+	margin-right: 10px;					
+	box-shadow: 2px 2px 2px #888;
+	font-size: 17px;
+}
+
+* button, input[type='submit'] {
+	cursor: pointer;
+}
+
+li {
+	list-style-type: none;
+}
+ul {
+	margin: 0;
+	padding: 0; 
+}
+
+.btn {
+	border: none;
+	padding: 5px 23px;
+	color: #fff;
+	font-size: 19px;
+	font-family: 'RobotoLight';
+	box-shadow: 0px 2px 1px #607D8B;
+	margin: 5px;
+	background: #888;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+#root {
+	overflow: hidden;
+	padding: 5px 5px;
+	width: 90%;
+	margin: 0 auto;
+	background: #7d9ee557;
+	border-radius: 5px;
+	box-shadow: 0px 4px 3px #3b3d415e, -2px 0px 3px #3b3d415e, 2px 0px 3px #3b3d415e;
+}
+/******** Nav ********
+===============================*/
+
+#sidebar {
+	margin-bottom: 10px;
+	width: 100%;
+	float: left;
+	background-color: inherit;
+	padding-top: -15px;
+	border-radius: 3px 3px 0 0;
+	display: block;
+}
+
+.nav li {
+	float: left;
+	margin-left: 10px;
+}
+
+
+.content_container ul li a, .nav li a {
+	text-decoration: none;
+	color: #fff;
+	font-family: 'RobotoLight';
+	font-size: 1.3em;
+}
+
+.nav_link:hover {
+	color: #0320b9 ;
+}
+
+.nav__content {
+	position: relative;
+}
+
+/* Nav end */
+
+/******** Main  ********
+===============================*/
+
+/* Header */
+.header {
+	padding: 5px 0px;
+	background: #03a9f4;
+	border-radius: 3px;
+	padding-bottom: 10px;
+	box-shadow: 0px 1px 3px #476e85;
+}
+
+.header:after {
+	content: " ";
+	display: table;
+	clear: both;
+}
+
+
+/* AutorizationPage */
+.autorizationPage {
+	width: 100%;
+}
+
+
+.authBtn {
+	margin-right: 19px;
+	float: right;
+	margin-top: 26px;
+}
+.user_data_container {
+	display: inline-block;
+	width: 270px;
+	float: right;
+	padding-left: 28px;
+	margin-top: -36px;
+	font-size: 21px;
+	font-family: 'RobotoLight';
+}
+
+.user_data_container p {
+	margin-bottom: 0px;
+	margin-top: 3px;
+}
+/* AutorizationPage end */
+
+/*Modal_container*/
+
+.fixed-overlay {
+	position: fixed;
+	overflow: auto;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(92, 108, 141, 0.66);
+}
+
+.modal {
+	box-shadow: 0px 2px 6px #3e3d49;
+	position: absolute;
+	left: 25%;
+	right: 25%;
+	top: 10%;
+	background: #fff;
+	width: 50%;
+	border-radius: 5px;
+}
+
+.modal_container {
+	background-color: #fff;
+}
+
+
+
+.modal_container .exit {
+	position: absolute;
+	right: 0;
+	top: 0;
+	cursor: pointer;
+	color: #5C6C8D;
+	font-size: 24px;
+	float: right;
+	padding: 10px 15px 10px 10px;
+}
+
+.modal_container h1 {
+	background: rgb(92,108,141);
+	padding: 10px;
+	margin: 56px 35px;
+	border-radius: 4px;
+	text-align: center;
+	font-size: 27px;
+	letter-spacing: 4px;
+}
+
+.modal_container button {
+	font-family: 'RobotoLight', Arial, sans-serif;
+	width: 50%;
+	border: none;
+	height: 69px;
+}
+
+.fixed-overlay .modal .modal_container button:hover {
+	background: #ffc04d;
+}
+
+.fixed-overlay .modal .modal_container button:hover span {
+	background: #eee;
+	color: #0320b9 ;
+	box-shadow: 2px 2px 4px #5c6c8d;
+}
+
+
+.modal_container button.accept {
+	background: #e77979;
+	float: left;
+	border-radius: 0px 0px 0px 5px;
+}
+
+.modal_container button.reject {
+	background: #56C590;
+	float:right;
+	border-radius: 0px 0px 5px 0px;
+}
+
+.modal_container button span {
+	background: white;
+	border-radius: 5px;
+	padding: 1% 13%;
+	font-size: 24px;
+	color: #5c6c8d;
+	text-shadow: 2px 2px 2px #aaa;
+}
+
+/* Modal Container end */
+
+/* User Data */
+.userData {
+	font-family: 'RobotoLight';
+	font-size: 20px;
+	float: right;
+	margin-top: 0px;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.userData ul, li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.userData li {
+	border-bottom: 1px dotted #fff;
+	margin-bottom: 3px;
+}
+/* User Data end */
+/* Header end*/
+
+/* Whinepad */
+#winepad {
+	margin: 10px 0;
+	width: 100%;
+
+}
+#exel {
+	display:block;
+	margin: 0 auto;
+	width: 90%;
+
+
+}
+
+#exel h2 {
+	text-align: center;
+}
+
+#exel table {
+	margin: 0 auto;
+	border-collapse: collapse;
+	border: 3px solid #fff;
+	background: #ccc;
+}
+
+#exel table thead {
+	font-family: 'RobotoCondensed-Bold';
+	cursor: pointer;
+	background: #777;
+}
+#exel table thead th {
+	transition: all .6s;
+}
+
+#exel table thead th:hover {
+	background: #80EBF1;
+}
+
+#exel table tbody {
+	font-family: 'RobotoCondensed-Light';
+}
+
+#exel table th {
+	border: 1px solid #fff;
+}
+
+#exel table td {
+	border: 1px solid #fff;
+}
+
+#exel table th, td {
+}
+
+
+
+/* Whinepad end */
+/* GetUserPhotos */
+
+#getUserPhotos {
+	border: 1px dotted #fff;
+	margin: 5px;
+	padding: 10px;
+	overflow: hidden;
+}
+
+#getUserPhotos .gallery {
+	display: block;
+	width: 80%;
+	margin: 0 auto;
+}
+
+#getUserPhotos .gallery img {
+	margin: 5px;
+	float: left;
+	box-shadow: 0px 3px 6px #333;
+}
+
+#getUserPhotos .btn {
+	display: block;
+	margin: 10px auto;
+	padding: 10px 50px;
+}
+
+/* GetUserPhotos end */
+
+/* Main end*/
+
+
+/* FormRegistration */
+
+#form_registration_container {
+	color: #fff;
+	box-shadow: 0px 4px 3px #3b3d415e, -2px 0px 3px #3b3d415e, 2px 0px 3px #3b3d415e;
+	border-radius: 3px;
+	background: #8693b0;
+
+}
+
+#form_registration {
+	padding: 5px;
+}
+
+#form_registration legend {
+	font-size: 22px;
+	font-family: 'RobotoCondensed-Bold';
+}
+
+
+#form_registration fieldset {
+	border: 1px dotted #68DAEB;
+	margin-bottom: 20px;
+	
+}
+
+#form_registration p {
+	font-size: 22px;
+	font-family: 'RobotoLight';
+}
+
+#form_registration span {
+	font-size: 18px;
+	font-family: 'RobotoLight';
+}
+
+#form_registration input {
+	display: block;
+	margin-bottom: 5px;
+}
+
+/******** Content ********
+===============================*/
+
+.content_container {
+	width: 100%;
+	display: block;
+	padding-left: 3%;
+}
+
+
+/* Counter */
+.counter {
+	float:right;
+}
+.counter h2 {
+	font-family: 'RobotoLight';
+	letter-spacing: 2px;
+}
+
+.counter h2 span{
+	font-family: 'RobotoLight';
+	letter-spacing: 2px;
+}
+/* Counter end */
+
+/*Timer*/
+
+.timer {
+	
+	float: right;
+}
+
+.timer_container {
+	float:right;
+}
+
+/* Timer end */
+
+/* Content end */
+
+/******** Article ********
+===============================*/
+
+
+
+
+
+
