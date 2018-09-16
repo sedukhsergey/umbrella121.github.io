@@ -7,7 +7,7 @@ import {auth} from '../actions/userActions'
 import {changeText} from '../actions/textActions'
 import {checkAuth} from '../actions/checkAuthAction'
 import {changeAuth} from '../actions/changeAuthGuestAction.js'
-import {getPhotos} from '../actions/getPhotosActions'
+import {getPhotos} from '../actions/getPhotosAction'
 
 import Main from '../components/Main/Main'
 import FormRegistration from '../components/FormRegistration/FormRegistration'
